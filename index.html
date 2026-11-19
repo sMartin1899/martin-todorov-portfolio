@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Martin Todorov, Marketing Manager. Marketing strategy, SEO, content, design and brand.">
+  <meta name="theme-color" content="#0F172A">
+  <title>Martin Todorov | Marketing Manager</title>
+
+  <!-- Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Martin Todorov, back to top">MT<span>.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero" id="top">
+    <div class="hero__blob hero__blob--coral" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--gold" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <figure class="hero__photo">
+        <img src="1713176150553.jpg" alt="Portrait of Martin Todorov, smiling with arms crossed" width="389" height="389">
+      </figure>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__name">Martin <span class="gradient-text">Todorov</span></h1>
+        <p class="hero__role">
+          Marketing Manager
+          <span class="hero__sep" aria-hidden="true">—</span>
+          <span class="hero__rotator" id="rotator" aria-live="polite">strategy</span>
+        </p>
+        <p class="hero__motto">"Positivity is my greatest strength."</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See my work</a>
+          <a href="Martin%20Todorov%27s%20Resume.pdf" class="btn btn--ghost" download>Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 01 About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">01</span>
+          <h2 class="section__title" id="about-title">About</h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              I create and run marketing strategies that build brands and drive results.
+            </p>
+            <p>
+              I have 8 years of experience across many industries.
+              Most of my work is B2B. I also have solid B2C experience.
+            </p>
+            <p>
+              My skills span SEO, CRM and CMS management, ABM, events and social media.
+              Graphic design and content creation back them up.
+              I've led company-wide rebrands, built CSR strategies and improved PR.
+            </p>
+            <p>
+              I'm always learning. Right now my focus is AI and project management.
+            </p>
+          </div>
+          <ul class="stats reveal">
+            <li class="stat">
+              <strong class="stat__value"><span data-count="8">0</span>+</strong>
+              <span class="stat__label">Years in marketing</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__value"><span data-count="200">0</span>%</strong>
+              <span class="stat__label">LinkedIn follower growth from paid campaigns</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__value"><span data-count="2">0</span>×</strong>
+              <span class="stat__label">First in-house or sole marketer, building from scratch</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Experience -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2 class="section__title" id="experience-title">Experience</h2>
+        </header>
+        <!-- Snake: top row left to right, curve down, bottom row right to left.
+             The list stays in date order for screen readers.
+             app.js draws the connecting lines into the SVG. -->
+        <div class="snake-wrap" id="snake">
+          <svg class="snake__lines" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="snakeGrad" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FF6B5B" />
+                <stop offset="1" stop-color="#F5C26B" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <p class="snake__hint">Hover or tap a role to see a highlight.</p>
+
+          <ol class="snake">
+            <li class="step step--job reveal" tabindex="0">
+              <div class="step__inner">
+                <div class="step__face step__front">
+                  <span class="step__num">01</span>
+                  <span class="step__years">2018 — 2019</span>
+                  <h3 class="step__company">Wessex Garages</h3>
+                  <span class="step__role">Marketing Assistant</span>
+                  <span class="step__flip" aria-hidden="true">↻</span>
+                </div>
+                <div class="step__face step__back">
+                  <span class="step__label">Highlight</span>
+                  <p class="step__highlight">SEO work that pushed the websites toward #1</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="step step--job reveal" tabindex="0">
+              <div class="step__inner">
+                <div class="step__face step__front">
+                  <span class="step__num">02</span>
+                  <span class="step__years">2019 — 2020</span>
+                  <h3 class="step__company">Bailey of Bristol</h3>
+                  <span class="step__role">Marketing Assistant</span>
+                  <span class="step__flip" aria-hidden="true">↻</span>
+                </div>
+                <div class="step__face step__back">
+                  <span class="step__label">Highlight</span>
+                  <p class="step__highlight">An 8-month event project with 15+ stakeholders</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="step step--job reveal" tabindex="0">
+              <div class="step__inner">
+                <div class="step__face step__front">
+                  <span class="step__num">03</span>
+                  <span class="step__years">2021 — 2022</span>
+                  <h3 class="step__company">SUEZ SES</h3>
+                  <span class="step__role">Marketing Assistant</span>
+                  <span class="step__flip" aria-hidden="true">↻</span>
+                </div>
+                <div class="step__face step__back">
+                  <span class="step__label">Highlight</span>
+                  <p class="step__highlight">+200% LinkedIn followers and 2× engagement</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="step step--job reveal" tabindex="0">
+              <div class="step__inner">
+                <div class="step__face step__front">
+                  <span class="step__num">04</span>
+                  <span class="step__years">2022 — 2024</span>
+                  <h3 class="step__company">RedRock Consulting</h3>
+                  <span class="step__role">Marketing Executive</span>
+                  <span class="step__flip" aria-hidden="true">↻</span>
+                </div>
+                <div class="step__face step__back">
+                  <span class="step__label">Highlight</span>
+                  <p class="step__highlight">Led a company-wide rebrand as the sole marketer</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="step step--job step--current reveal" tabindex="0">
+              <div class="step__inner">
+                <div class="step__face step__front">
+                  <span class="step__num">05</span>
+                  <span class="step__badge">Current</span>
+                  <span class="step__years">2025 — Now</span>
+                  <h3 class="step__company">Mawdsleys BER</h3>
+                  <span class="step__role">Marketing Manager</span>
+                  <span class="step__flip" aria-hidden="true">↻</span>
+                </div>
+                <div class="step__face step__back">
+                  <span class="step__label">Highlight</span>
+                  <p class="step__highlight">Building the marketing function from the ground up</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="step step--next reveal">
+              <span class="step__num">06</span>
+              <h3 class="step__company">What's next?</h3>
+              <span class="step__role">Could it be your team?</span>
+              <a href="#contact" class="step__link">Let's talk →</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2 class="section__title" id="skills-title">Skills</h2>
+        </header>
+
+        <h3 class="subhead reveal">Marketing expertise</h3>
+        <ul class="skills">
+          <li class="skill reveal">Strategy building &amp; execution</li>
+          <li class="skill reveal">SEO</li>
+          <li class="skill reveal">Content creation</li>
+          <li class="skill reveal">Social media marketing</li>
+          <li class="skill reveal">Graphic design</li>
+          <li class="skill reveal">Account Based Marketing</li>
+          <li class="skill reveal">Email marketing</li>
+          <li class="skill reveal">CRM &amp; CMS management</li>
+          <li class="skill reveal">Event management</li>
+          <li class="skill reveal">Google Ads</li>
+          <li class="skill reveal">PR &amp; CSR</li>
+          <li class="skill reveal">Budget management</li>
+          <li class="skill reveal">Market research</li>
+        </ul>
+
+        <h3 class="subhead reveal">Software</h3>
+        <!-- Logos: Simple Icons via jsDelivr (pinned version).
+             Adobe and Microsoft logos aren't in Simple Icons, so those use CSS letter tiles. -->
+        <ul class="tools">
+          <li class="tool reveal"><span class="tool__icon tool__icon--ps" aria-hidden="true">Ps</span>Adobe Photoshop</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--ai" aria-hidden="true">Ai</span>Adobe Illustrator</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--id" aria-hidden="true">Id</span>Adobe InDesign</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--ae" aria-hidden="true">Ae</span>Adobe After Effects</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--gads" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/googleads.svg" alt="" width="22" height="22" loading="lazy"></span>Google Ads</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--ga" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/googleanalytics.svg" alt="" width="22" height="22" loading="lazy"></span>Google Analytics</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--wp" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/wordpress.svg" alt="" width="22" height="22" loading="lazy"></span>WordPress</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--zoho" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/zoho.svg" alt="" width="22" height="22" loading="lazy"></span>Zoho Campaigns</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--sm" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/surveymonkey.svg" alt="" width="22" height="22" loading="lazy"></span>SurveyMonkey</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--html" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/html5.svg" alt="" width="22" height="22" loading="lazy"></span>HTML</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--css" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/css.svg" alt="" width="22" height="22" loading="lazy"></span>CSS</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--word" aria-hidden="true">W</span>Microsoft Word</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--excel" aria-hidden="true">X</span>Microsoft Excel</li>
+          <li class="tool reveal"><span class="tool__icon tool__icon--ppt" aria-hidden="true">P</span>Microsoft PowerPoint</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 Projects -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2 class="section__title" id="projects-title">Projects</h2>
+        </header>
+        <div class="projects">
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">01</span>
+            <span class="card__tag">Strategy</span>
+            <h3 class="card__title">Marketing strategy from the ground up</h3>
+            <p class="card__text">
+              As Mawdsleys' first in-house marketer, I researched the market and the business.
+              Then I built the strategy and put it into action.
+            </p>
+            <p class="card__where">Mawdsleys BER</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">02</span>
+            <span class="card__tag">Brand</span>
+            <h3 class="card__title">Company-wide rebranding</h3>
+            <p class="card__text">
+              I refreshed old assets and created new ones.
+              I also moved the website to a new platform and aligned the LinkedIn page.
+            </p>
+            <p class="card__where">RedRock Consulting</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">03</span>
+            <span class="card__tag">Paid social</span>
+            <h3 class="card__title">LinkedIn campaigns: +200% followers</h3>
+            <p class="card__text">
+              I ran targeted LinkedIn ad campaigns as part of an ABM approach.
+              Followers grew by 200%. Engagement doubled.
+            </p>
+            <p class="card__where">SUEZ SES</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">04</span>
+            <span class="card__tag">Web</span>
+            <h3 class="card__title">New website launch</h3>
+            <p class="card__text">
+              I launched a dedicated website for one of the service categories.
+              I now run content and SEO for both company sites.
+            </p>
+            <p class="card__where">Mawdsleys BER</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">05</span>
+            <span class="card__tag">CSR</span>
+            <h3 class="card__title">Social value programme</h3>
+            <p class="card__text">
+              I helped create a carbon reduction plan and organised charity events.
+              I also built a training programme for young people from disadvantaged backgrounds.
+            </p>
+            <p class="card__where">RedRock Consulting</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">06</span>
+            <span class="card__tag">Events</span>
+            <h3 class="card__title">8-month event project</h3>
+            <p class="card__text">
+              I designed the collateral and managed over 15 stakeholders.
+              I handled logistics, accommodation, uniforms and stand layout.
+            </p>
+            <p class="card__where">Bailey of Bristol</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index" aria-hidden="true">07</span>
+            <span class="card__tag">Motion</span>
+            <h3 class="card__title">Rugby pitchside video advert</h3>
+            <p class="card__text">
+              I created a video advert for a digital pitchside board at a rugby ground.
+              I made it in Adobe After Effects.
+            </p>
+            <p class="card__where">RedRock Consulting</p>
+          </article>
+        </div>
+        <div class="cta reveal">
+          <span class="cta__eyebrow">Full project library</span>
+          <h3 class="cta__title">Want to see <span class="gradient-text">more of my work?</span></h3>
+          <p class="cta__text">Campaigns, brand work, brochures and more. All in one place.</p>
+          <a href="https://drive.google.com/file/d/1yhvFu7sJjqsPMgKrzBE43YkS197vN73E/view?usp=drive_link" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            Explore my portfolio ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Education -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">05</span>
+          <h2 class="section__title" id="education-title">Education &amp; Certifications</h2>
+        </header>
+        <div class="edu">
+          <article class="edu__main reveal">
+            <span class="card__tag">Degree</span>
+            <h3 class="edu__title">BA (Hons) Marketing, Advertising and PR</h3>
+            <p class="edu__school">Birmingham City University · 2012 — 2015</p>
+            <p class="edu__grade">Second Class Upper Division (2:1)</p>
+          </article>
+          <ul class="certs">
+            <li class="cert reveal">
+              <strong>CIM Level 4 Certificate in Professional Digital Marketing</strong>
+              <span>CIM · Merit</span>
+            </li>
+            <li class="cert reveal">
+              <strong>Generative AI for Digital Marketing</strong>
+              <span>IBM</span>
+            </li>
+            <li class="cert reveal">
+              <strong>Agile Project Management</strong>
+              <span>Google</span>
+            </li>
+            <li class="cert reveal">
+              <strong>Foundations of Project Management</strong>
+              <span>Google</span>
+            </li>
+            <li class="cert reveal">
+              <strong>Digital Marketing Techniques</strong>
+              <span>CIM</span>
+            </li>
+            <li class="cert reveal">
+              <strong>Digital Marketing Online Training</strong>
+              <span>Google Digital Garage</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Beyond work -->
+    <section class="section section--alt" id="beyond" aria-labelledby="beyond-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">06</span>
+          <h2 class="section__title" id="beyond-title">Beyond Work</h2>
+        </header>
+        <div class="beyond">
+          <article class="panel reveal">
+            <h3 class="panel__title">Achievements</h3>
+            <ul class="chips">
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🥉</span>2 bronze medals in muay thai</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🥾</span>Bronze medal in sports trekking</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🎤</span>Poetry recitation awards</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🗣️</span>B1 certificate in German</li>
+            </ul>
+          </article>
+          <article class="panel reveal">
+            <h3 class="panel__title">Interests</h3>
+            <ul class="chips">
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🥊</span>Muay thai &amp; boxing</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🥋</span>Wing chun, kung fu &amp; tai chi</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">⚽</span>AC Milan fan</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">📚</span>Reading</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🌱</span>Gardening</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🧘</span>Meditation</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🎮</span>Computer games</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🎲</span>Board games</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🎧</span>Electronic music</li>
+            </ul>
+          </article>
+          <article class="panel reveal">
+            <h3 class="panel__title">Charity</h3>
+            <ul class="chips">
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🤝</span>WECIL: 2+ years volunteering</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🍎</span>FareShare: 2+ years volunteering</li>
+              <li class="chip"><span class="chip__icon" aria-hidden="true">🎗️</span>Charity fundraisers at work</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">07</span>
+          <h2 class="section__title" id="contact-title">Contact</h2>
+        </header>
+        <div class="contact reveal">
+          <p class="contact__lead">Have a project in mind? Let's talk.</p>
+          <a href="mailto:scar_man@abv.bg" class="contact__email">scar_man@abv.bg</a>
+          <div class="contact__actions">
+            <a href="mailto:scar_man@abv.bg" class="btn btn--primary">Send an email</a>
+            <button type="button" class="btn btn--ghost" id="copyEmail" data-email="scar_man@abv.bg">
+              Copy address
+            </button>
+            <a href="Martin%20Todorov%27s%20Resume.pdf" class="btn btn--ghost" download>Download CV ↓</a>
+            <a href="https://drive.google.com/file/d/1yhvFu7sJjqsPMgKrzBE43YkS197vN73E/view?usp=drive_link" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+          </div>
+          <p class="contact__status" id="copyStatus" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Martin Todorov · Bristol, UK</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
